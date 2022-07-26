@@ -4,6 +4,28 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+## Quickstart (via make)
+
+These are the commmands that I use for development:
+
+### `make run`
+
+Serve a local dev build. Automatically opens up the page `localhost:3000`
+
+### `make build preview`
+
+In order to mimic what you will experience in a Firebase deployment, this
+command will prepare a "production" build using `npm run build`, which generates
+the `build` directory. Firebase reads from the build directory when deployed.
+This command also starts a local firebase deployment by serving the `build`
+directory on i.e. `localhost:5000` (or similar, depending on port availability).
+
+### `make clean`
+
+This command simply destroys the build folder.
+
+## Default commands
+
 In the project directory, you can run:
 
 ### `npm start`
