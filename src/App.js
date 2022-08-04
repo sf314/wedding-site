@@ -2,8 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import logAnalytics from './analytics/FirebaseAnalytics.js'
 
-console.log("App.js ran")
-
 function App() {
   logAnalytics("page_render_main")
 
