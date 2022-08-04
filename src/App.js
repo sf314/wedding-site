@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import logAnalytics from './analytics/FirebaseAnalytics.js'
 
 function App() {
+  logAnalytics("page_render_main")
+
   return (
     <div className="App">
       <header className="App-header">
