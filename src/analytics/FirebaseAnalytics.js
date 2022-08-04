@@ -23,7 +23,6 @@ const firebaseAnalytics = getAnalytics(firebaseApp);
 
 // Expose logging API
 function logAnalytics(metricName) {
-  console.log("Logged metric: " + metricName)
   logEvent(firebaseAnalytics, metricName)
 }
 
