@@ -1,26 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
 import logAnalytics from './analytics/FirebaseAnalytics.js'
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
+import Homepage from './pages/Homepage'
+import AboutUs from './pages/AboutUs'
 
 function App() {
   logAnalytics("page_render_main")
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        {/* Links! */}
+        <div>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about-us">About Us</Link>
+            </li>
+          </ul>
+        </div>
+        <Routes>
+          <Route path="/" element={<Homepage />}/>
+          <Route path="/about-us" element={<AboutUs />}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
