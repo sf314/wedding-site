@@ -11,19 +11,19 @@ function App() {
     <div className="App">
       <BrowserRouter>
         {/* Links! */}
-        <div>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about-us">About Us</Link>
-            </li>
-          </ul>
+        <div className='App-header'>
+          <h2 className='App-title'>
+            Adriana and Stephen's Wedding!
+          </h2>
+          <nav className="App-navbar">
+            <Link to="/" className='App-link'>Home</Link>
+            <Link to="/about-us" className='App-link'>About Us</Link>
+          </nav>
         </div>
+
         <Routes>
-          <Route path="/" element={<Homepage />}/>
-          <Route path="/about-us" element={<AboutUs />}/>
+          <Route exact path="/" element={<Homepage />}/>
+          <Route exact path="/about-us" element={<AboutUs />}/>
         </Routes>
       </BrowserRouter>
     </div>
