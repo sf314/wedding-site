@@ -10,7 +10,6 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        {/* Links! */}
         <div className='App-header'>
           <h2 className='App-title'>
             Adriana and Stephen's Wedding!
