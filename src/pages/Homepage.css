@@ -1,0 +1,28 @@
+.Homepage-border {
+    /* This is for the left and right edges, so that the content is centered */
+    background-color: #21252b;
+
+    display: flex;
+    justify-content: center;
+}
+
+.Homepage-content {
+    background-color: #282c34;
+    padding: 1em;
+    min-height: 100vh;
+
+    max-width: 800px;
+
+    font-size: calc(10px + 2vmin);
+    text-align: start;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+a {
+    color: #5490cf;
+}
